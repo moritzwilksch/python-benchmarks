@@ -23,19 +23,19 @@ AVG = 4.18186 seconds.
 ## MacBook Pro 2020 (2GHz Quad-Core i5, 16GB RAM)
 ```
 ============Matrix Multiply=============
-AVG = 1.03386 seconds.
+AVG = 0.67405 seconds.
 ----------------------------------------
 ========Monte Carlo Random Walk=========
-AVG = 2.05787 seconds.
+AVG = 1.23808 seconds.
 ----------------------------------------
 ===========String Processing============
-AVG = 0.51962 seconds.
+AVG = 0.35248 seconds.
 ----------------------------------------
 ===========TFIDF from string============
-AVG = 0.90192 seconds.
+AVG = 0.62952 seconds.
 ----------------------------------------
 =========Fitting RF in parallel=========
-AVG = 3.65580 seconds.
+AVG = 2.29664 seconds.
 ----------------------------------------
 ```
 
