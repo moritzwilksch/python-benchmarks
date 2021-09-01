@@ -9,6 +9,7 @@ Seconds taken for completition (lower is better)
 |**MacBook Pro 2020 (2GHz QC i5, 16GB RAM)** | 0.67 | 1.24 | 0.35 | 0.63 |2.30 |
 |**Vultr Cloud Compute (4 cores, 8GB RAM)**| 0.97 | 1.46 | 0.36 | 0.65| 3.65|
 |**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63|
+|**Hetzner CCX12 (2 cores, 8GB RAM)**| 1.00 | 1.23 | 0.34 | 0.65 | 2.31|
 
 # Raw Stats
 
@@ -86,3 +87,24 @@ AVG = 0.35890 seconds.
 =========Fitting RF in parallel=========
 AVG = 1.63479 seconds.
 ----------------------------------------
+```
+
+## Hetzner CCX12 (2 cores, 8GB RAM)
+```
+============Matrix Multiply=============
+AVG = 1.00685 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.23441 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.34189 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.64542 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 2.31264 seconds.
+----------------------------------------
+```
+
