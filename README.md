@@ -2,7 +2,7 @@
 A couple of ML-related benchmarks for testing CPU performance of different machines
 
 # Stats Table
-Seconds taken for completition (lower is better)  
+Seconds taken for task completion (lower is better)  
 |Machine | Matrix Multiply | MC Random Walk | String Processing | TFIDF from String | RF |
 |-----|:---:|:---:|:---:|:---:|:---:|
 |**Hetzner CPX21 (3 AMD cores, 4GB RAM)**| 0.92 |1.56 | 0.38 |0.97 | 4.18 |
@@ -13,6 +13,7 @@ Seconds taken for completition (lower is better)
 |**Hetzner CCX22 (4 AMD cores, 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 |
 |**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 |
 |**GCP e2-small (2 cores, 2GB RAM)** | 0.94 | 1.84 | 0.35 | 0.65 | 5.38 |
+|**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 |
 
 # Raw Stats
 
@@ -148,8 +149,6 @@ AVG = 3.22997 seconds.
 ----------------------------------------
 ```
 
-
-
 ## GCP e2-small (2 cores, 2GB RAM)
 ```
 ============Matrix Multiply=============
@@ -166,6 +165,25 @@ AVG = 0.64941 seconds.
 ----------------------------------------
 =========Fitting RF in parallel=========
 AVG = 5.38431 seconds.
+----------------------------------------
+```
+
+## GCP N2D-standard-4 (4 cores, 16GB RAM)
+```
+============Matrix Multiply=============
+AVG = 0.94525 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.49257 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.28296 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.54918 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 3.36308 seconds.
 ----------------------------------------
 
 ```
