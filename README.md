@@ -10,7 +10,8 @@ Seconds taken for completition (lower is better)
 |**Vultr Cloud Compute (4 cores, 8GB RAM)**| 0.97 | 1.46 | 0.36 | 0.65| 3.65|
 |**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63|
 |**Hetzner CCX12 (2 cores, 8GB RAM)**| 1.00 | 1.23 | 0.34 | 0.65 | 2.31|
-|**Hetzner CCX22 (4 cores (AMD), 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 |
+|**Hetzner CCX22 (4 AMD cores, 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 |
+|**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 |
 
 # Raw Stats
 
@@ -108,7 +109,7 @@ AVG = 0.64542 seconds.
 AVG = 2.31264 seconds.
 ----------------------------------------
 ```
-## Hetzner CCX 22 (4 cores, 16GB RAM)
+## Hetzner CCX22 (4 AMD cores, 16GB RAM)
 ```
 ============Matrix Multiply=============
 AVG = 0.83095 seconds.
@@ -127,4 +128,22 @@ AVG = 3.45099 seconds.
 ----------------------------------------
 ```
 
+## Hetzner CCX22 (4 Intel Xeon Gold cores, 16GB RAM)
+```
+============Matrix Multiply=============
+AVG = 0.72997 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.11520 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.26992 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.49575 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 3.22997 seconds.
+----------------------------------------
+```
 
