@@ -14,7 +14,8 @@ Seconds taken for task completion (lower is better)
 |**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 |
 |**GCP e2-small (2 cores, 2GB RAM)** | 0.94 | 1.84 | 0.35 | 0.65 | 5.38 |
 |**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 |
-|**AWS c4.xlarge** | 0.929 | 1.60 | 0.316 | 0.569 |2.879 |
+|**AWS c4.xlarge** | 0.93 | 1.60 | 0.32 | 0.57 |2.88 |
+|**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 |
 
 # Raw Stats
 
@@ -205,4 +206,23 @@ AVG = 0.56920 seconds.
 =========Fitting RF in parallel=========
 AVG = 2.87897 seconds.
 ----------------------------------------
-``
+```
+
+## AWS z1d.xlarge
+```
+============Matrix Multiply=============
+AVG = 0.69148 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.27024 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.22947 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.42629 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 1.97158 seconds.
+----------------------------------------
+```
