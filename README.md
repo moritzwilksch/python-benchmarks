@@ -16,7 +16,7 @@ Seconds taken for task completion (lower is better)
 |**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 |
 |**AWS c4.xlarge** | 0.93 | 1.60 | 0.32 | 0.57 |2.88 |
 |**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 |
-
+|**AWS t4g.xlarge (ARM)** | 0.85 | 1.69 | 0.53 | 0.88 | 2.92 |
 # Raw Stats
 
 ## Hetzner CPX21 (3 AMD cores, 4GB RAM)
@@ -224,5 +224,24 @@ AVG = 0.42629 seconds.
 ----------------------------------------
 =========Fitting RF in parallel=========
 AVG = 1.97158 seconds.
+----------------------------------------
+```
+
+## AWS t4g.xlarge (Graviton ARM)
+```
+============Matrix Multiply=============
+AVG = 0.84900 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.68697 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.52503 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.88201 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 2.92609 seconds.
 ----------------------------------------
 ```
