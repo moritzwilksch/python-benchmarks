@@ -268,7 +268,7 @@ AVG = 0.38755 seconds.
 =========Fitting RF in parallel=========
 AVG = 1.86334 seconds.
 ----------------------------------------
-
+```
 
 
 ## AWS t4g.xlarge (Graviton ARM)
