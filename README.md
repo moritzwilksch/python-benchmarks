@@ -22,6 +22,10 @@ Seconds taken for task completion (lower is better)
 |**AWS t4g.xlarge (ARM)** | 0.85 | 1.69 | 0.53 | 0.88 | 2.92 |
 |**Azure Standard_F4s_v2**| 0.76 | 1.41 | 0.28 | 0.51 | 2.67 |
 
+# Beautiful DataViz
+![](benchmark_plot.png)
+
+
 # Raw Stats
 
 ## Hetzner CPX21 (3 AMD cores, 4GB RAM)
