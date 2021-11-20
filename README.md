@@ -1,7 +1,13 @@
-# Python Benchmarks
+# Python Benchmarks 💻
 A couple of ML-related benchmarks for testing CPU performance of different machines
 
-# Stats Table
+# TL;DR 🥇
+- Compute with little memory: `C6i` (cheapest) or `Vultr HFC`
+- Compute with normal memory: `m5zn`
+- Compute with a lot of memory: `z1d`
+
+
+# Stats Table 📊
 Seconds taken for task completion (lower is better)  
 |Machine | Matrix Multiply | MC Random Walk | String Processing | TFIDF from String | RF |
 |-----|:---:|:---:|:---:|:---:|:---:|
