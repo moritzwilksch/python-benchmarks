@@ -29,6 +29,7 @@ Seconds taken for task completion (lower is better)
 |**Azure Standard_F4s_v2**| 0.76 | 1.41 | 0.28 | 0.51 | 2.67 |
 |🥇**AWS C6i.xlarge (BEST PRICE/PERF)** | 0.67 | 1.32 | 0.22 | 0.41 | 1.78 |
 |**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 |
+|**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 |
 
 # Beautiful DataViz
 ![](benchmark_plot.png)
@@ -380,6 +381,21 @@ AVG = 3.06784 seconds.
 ----------------------------------------
 ```
 
-
-
-
+## AWS t3.xlarge
+```
+============Matrix Multiply=============
+AVG = 0.88419 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.63347 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.30817 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.54919 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 2.60256 seconds.
+----------------------------------------
+```
