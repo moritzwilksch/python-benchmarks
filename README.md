@@ -1,7 +1,13 @@
-# Python Benchmarks
+# Python Benchmarks 💻
 A couple of ML-related benchmarks for testing CPU performance of different machines
 
-# Stats Table
+# TL;DR 🥇
+- Compute with little memory: `C6i` (cheapest) or `Vultr HFC`
+- Compute with normal memory: `m5zn`
+- Compute with a lot of memory: `z1d`
+
+
+# Stats Table 📊
 Seconds taken for task completion (lower is better)  
 |Machine | Matrix Multiply | MC Random Walk | String Processing | TFIDF from String | RF |
 |-----|:---:|:---:|:---:|:---:|:---:|
@@ -9,18 +15,22 @@ Seconds taken for task completion (lower is better)
 |**MacBook Pro 2020 (2GHz QC i5, 16GB RAM)** | 0.67 | 1.24 | 0.35 | 0.63 |2.30 |
 |**M1Pro 10-core (MBP 2021)** | 0.32 | 0.76 | 0.18 | 0.30 | 1.34 |
 |**Vultr Cloud Compute (4 cores, 8GB RAM)**| 0.97 | 1.46 | 0.36 | 0.65| 3.65|
-|**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63|
+|🥇**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63|
 |**Hetzner CCX12 (2 cores, 8GB RAM)**| 1.00 | 1.23 | 0.34 | 0.65 | 2.31|
 |**Hetzner CCX22 (4 AMD cores, 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 |
 |**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 |
 |**GCP e2-small (2 cores, 2GB RAM)** | 0.94 | 1.84 | 0.35 | 0.65 | 5.38 |
 |**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 |
 |**AWS c4.xlarge** | 0.93 | 1.60 | 0.32 | 0.57 |2.88 |
-|**AWS c5.xlarge (BEST PRICE/PERF)** | 0.76 | 1.45 | 0.27 | 0.49 | 2.18 |
-|**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 |
-|**AWS m5zn.xlarge (BEST PRICE/PERF)**| 0.62 | 1.14 | 0.21 | 0.39 | 1.86 |
+|🥈**AWS c5.xlarge (Runner-Up)** | 0.76 | 1.45 | 0.27 | 0.49 | 2.18 |
+|🥇**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 |
+|🥇**AWS m5zn.xlarge (BEST PRICE/PERF)**| 0.62 | 1.14 | 0.21 | 0.39 | 1.86 |
 |**AWS t4g.xlarge (ARM)** | 0.85 | 1.69 | 0.53 | 0.88 | 2.92 |
 |**Azure Standard_F4s_v2**| 0.76 | 1.41 | 0.28 | 0.51 | 2.67 |
+|🥇**AWS C6i.xlarge (BEST PRICE/PERF)** | 0.67 | 1.32 | 0.22 | 0.41 | 1.78 |
+|**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 |
+|**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 |
+|**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 |
 
 # Beautiful DataViz
 ![](benchmark_plot.png)
@@ -333,4 +343,79 @@ AVG = 0.29809 seconds.
 AVG = 1.34086 seconds.
 ----------------------------------------
 ```
+
+## AWS C6i.xlarge (4 CPUs, 8GB RAM)
+```
+============Matrix Multiply=============
+AVG = 0.66822 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.31814 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.22283 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.41000 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 1.77767 seconds.
+----------------------------------------
+```
+
+## AWS t2.xlarge
+```
+============Matrix Multiply=============
+AVG = 1.06492 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.76756 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.37675 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.66983 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 3.06784 seconds.
+----------------------------------------
+```
+
+## AWS t3.xlarge
+```
+============Matrix Multiply=============
+AVG = 0.88419 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.63347 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.30817 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.54919 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 2.60256 seconds.
+----------------------------------------
+```
+
+## AWS m6i.xlarge
+```
+============Matrix Multiply=============
+AVG = 0.68407 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.44788 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.23512 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.44020 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 3.03618 seconds.
+----------------------------------------
 
