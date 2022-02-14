@@ -31,6 +31,7 @@ Seconds taken for task completion (lower is better)
 |**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 |
 |**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 |
 |**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 |
+|**Hetzner Dedicated AX41**| 0.72 | 1.14 | 0.25 | 0.49 | 2.65 |
 
 # Beautiful DataViz
 ![](benchmark_plot.png)
@@ -418,4 +419,23 @@ AVG = 0.44020 seconds.
 =========Fitting RF in parallel=========
 AVG = 3.03618 seconds.
 ----------------------------------------
+```
 
+## Hetzner Dedicated AX41
+```
+============Matrix Multiply=============
+AVG = 0.72731 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.14412 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.25349 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.49248 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 2.65035 seconds.
+----------------------------------------
+```
