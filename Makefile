@@ -7,3 +7,10 @@ install-local:
 
 run:
 	python benchmarks.py
+
+build:
+	docker build -t pybenchmarks .
+
+publish:
+	docker tag pybenchmarks moritzwilksch/infra-stuff:latest
+	docker push moritzwilksch/infra-stuff:latest

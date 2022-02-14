@@ -75,10 +75,18 @@ def fit_rf(X, y):
     return "Done."
 
 
+@timer
+def fit_rf_synthetic(X, y):
+    rf = RandomForestRegressor(n_estimators=100, n_jobs=-1, max_depth=10)
+    rf.fit(X, y)
+    return "Done."
+
+
 # EXECUTION
 # Matrix Multiply
 a = np.random.randint(-100, 100, (3_000, 100)).astype(np.int16)
 b = np.random.randint(-100, 100, (100, 3_000)).astype(np.int16)
+
 benchmark_runner(matrix_multiply, n_runs=5, title="Matrix Multiply", a=a, b=b)
 del a, b
 
@@ -100,6 +108,8 @@ for col in catcols:
     data[col] = data[col].cat.codes
 
 benchmark_runner(fit_rf, n_runs=5, X=data.drop('tip', axis=1), y=data.tip, title="Fitting RF in parallel")
+
+benchmark_runner(fit_rf, n_runs=1, X=np.random.random((5_000, 15)), y=np.random.random(5_000), title="Fitting RF in parallel on _synthetic_ data")
 
 # SAVE LOG
 c.save_text("benchmarks.log")

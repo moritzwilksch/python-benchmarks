@@ -9,29 +9,29 @@ A couple of ML-related benchmarks for testing CPU performance of different machi
 
 # Stats Table 📊
 Seconds taken for task completion (lower is better)  
-|Machine | Matrix Multiply | MC Random Walk | String Processing | TFIDF from String | RF |
-|-----|:---:|:---:|:---:|:---:|:---:|
-|**Hetzner CPX21 (3 AMD cores, 4GB RAM)**| 0.92 |1.56 | 0.38 |0.97 | 4.18 |
-|**MacBook Pro 2020 (2GHz QC i5, 16GB RAM)** | 0.67 | 1.24 | 0.35 | 0.63 |2.30 |
-|**M1Pro 10-core (MBP 2021)** | 0.32 | 0.76 | 0.18 | 0.30 | 1.34 |
-|**Vultr Cloud Compute (4 cores, 8GB RAM)**| 0.97 | 1.46 | 0.36 | 0.65| 3.65|
-|🥇**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63|
-|**Hetzner CCX12 (2 cores, 8GB RAM)**| 1.00 | 1.23 | 0.34 | 0.65 | 2.31|
-|**Hetzner CCX22 (4 AMD cores, 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 |
-|**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 |
-|**GCP e2-small (2 cores, 2GB RAM)** | 0.94 | 1.84 | 0.35 | 0.65 | 5.38 |
-|**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 |
-|**AWS c4.xlarge** | 0.93 | 1.60 | 0.32 | 0.57 |2.88 |
-|🥈**AWS c5.xlarge (Runner-Up)** | 0.76 | 1.45 | 0.27 | 0.49 | 2.18 |
-|🥇**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 |
-|🥇**AWS m5zn.xlarge (BEST PRICE/PERF)**| 0.62 | 1.14 | 0.21 | 0.39 | 1.86 |
-|**AWS t4g.xlarge (ARM)** | 0.85 | 1.69 | 0.53 | 0.88 | 2.92 |
-|**Azure Standard_F4s_v2**| 0.76 | 1.41 | 0.28 | 0.51 | 2.67 |
-|🥇**AWS C6i.xlarge (BEST PRICE/PERF)** | 0.67 | 1.32 | 0.22 | 0.41 | 1.78 |
-|**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 |
-|**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 |
-|**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 |
-|**Hetzner Dedicated AX41**| 0.72 | 1.14 | 0.25 | 0.49 | 2.65 |
+|Machine | Matrix Multiply | MC Random Walk | String Processing | TFIDF from String | RF | RF synth |
+|-----|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Hetzner CPX21 (3 AMD cores, 4GB RAM)**| 0.92 |1.56 | 0.38 |0.97 | 4.18 | 49.9 |
+|**MacBook Pro 2020 (2GHz QC i5, 16GB RAM)** | 0.67 | 1.24 | 0.35 | 0.63 |2.30 | |
+|**M1Pro 10-core (MBP 2021)** | 0.32 | 0.76 | 0.18 | 0.30 | 1.34 | |
+|**Vultr Cloud Compute (4 cores, 8GB RAM)**| 0.97 | 1.46 | 0.36 | 0.65| 3.65| |
+|🥇**Vultr HFC Compute (3 cores, 8GB RAM)**|0.59 | 0.77 | 0.21 | 0.36 | 1.63| |
+|**Hetzner CCX12 (2 cores, 8GB RAM)**| 1.00 | 1.23 | 0.34 | 0.65 | 2.31| |
+|**Hetzner CCX22 (4 AMD cores, 16GB RAM)**| 0.83 | 1.01 | 0.34 | 0.68 | 3.42 | |
+|**Hetzner CCX22 (4 Intel cores, 16GB RAM)**| 0.73 | 1.12 | 0.27 | 0.50 | 3.23 | |
+|**GCP e2-small (2 cores, 2GB RAM)** | 0.94 | 1.84 | 0.35 | 0.65 | 5.38 | |
+|**GCP N2D-standard-4 (4 cores, 16GB RAM)**| 0.94 | 1.49 | 0.28 | 0.55 | 3.36 | |
+|**AWS c4.xlarge** | 0.93 | 1.60 | 0.32 | 0.57 |2.88 | |
+|🥈**AWS c5.xlarge (Runner-Up)** | 0.76 | 1.45 | 0.27 | 0.49 | 2.18 | |
+|🥇**AWS z1d.xlarge** | 0.69 | 1.27 | 0.23 | 0.43 | 1.97 | |
+|🥇**AWS m5zn.xlarge (BEST PRICE/PERF)**| 0.62 | 1.14 | 0.21 | 0.39 | 1.86 | |
+|**AWS t4g.xlarge (ARM)** | 0.85 | 1.69 | 0.53 | 0.88 | 2.92 | |
+|**Azure Standard_F4s_v2**| 0.76 | 1.41 | 0.28 | 0.51 | 2.67 | |
+|🥇**AWS C6i.xlarge (BEST PRICE/PERF)** | 0.69 | 1.34 | 0.29 | 0.56 | 2.02 | 39.6 |
+|**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 | |
+|**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 | |
+|**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 | |
+|**Hetzner Dedicated AX41**| 0.72 | 1.14 | 0.25 | 0.49 | 2.65 | 17.7 |
 
 # Beautiful DataViz
 ![](benchmark_plot.png)
