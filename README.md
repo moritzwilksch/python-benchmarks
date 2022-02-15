@@ -31,7 +31,7 @@ Seconds taken for task completion (lower is better)
 |**AWS t2.xlarge** | 1.06 | 1.77 | 0.38 | 0.67 | 3.07 | |
 |**AWS t3.xlarge** | 0.88 | 1.63 | 0.31 | 0.55 | 2.60 | |
 |**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 | |
-|**Hetzner Dedicated AX41**| 0.72 | 1.14 | 0.25 | 0.49 | 2.65 | 17.7 |
+|**Hetzner Dedicated AX41**| 0.72 | 1.14 | 0.25 | 0.49 | 2.65 | 12.1 |
 |**AWS C6i.2xlarge** | 0.69 | 1.34 | 0.29 | 0.56 | 2.34 | 20.2 |
 
 
