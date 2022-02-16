@@ -3,3 +3,4 @@ scikit-learn
 nltk
 rich
 seaborn
+matplotlib
