@@ -33,6 +33,7 @@ Seconds taken for task completion (lower is better)
 |**AWS m6i.xlarge**| 0.68 | 1.45 | 0.24 | 0.44 | 3.04 | ||
 |**Hetzner Dedicated AX41**| 0.70 | 1.12 | 0.25 | 0.48 | 2.65 | 11.3 | 3.3 |
 |**AWS C6i.2xlarge** | 0.69 | 1.34 | 0.29 | 0.56 | 2.34 | 20.2 ||
+|**AWS c7g.xlarge** | 0.94 | 1.21 | 0.21 | 0.40 | 1.73 | 27.1 | 2.51 |
 
 
 # Beautiful DataViz
@@ -441,3 +442,30 @@ AVG = 0.49248 seconds.
 AVG = 2.65035 seconds.
 ----------------------------------------
 ```
+
+## AWS c7g.xlarge
+```
+============Matrix Multiply=============
+AVG = 0.94545 seconds.
+----------------------------------------
+========Monte Carlo Random Walk=========
+AVG = 1.21004 seconds.
+----------------------------------------
+===========String Processing============
+AVG = 0.21467 seconds.
+----------------------------------------
+===========TFIDF from string============
+AVG = 0.40495 seconds.
+----------------------------------------
+=========Fitting RF in parallel=========
+AVG = 1.73259 seconds.
+----------------------------------------
+Fitting RF in parallel on _synthetic_ data
+AVG = 27.08336 seconds.
+----------------------------------------
+=======Scatterplotting 1M points========
+AVG = 2.51457 seconds.
+----------------------------------------
+```
+
+
